@@ -1,0 +1,1 @@
+<div class="sidebar"><h2>Admin</h2><a href="admin_dashboard.php">Dashboard</a><a href="admin_products.php">Products</a><a href="admin_orders.php">Orders</a><a href="admin_users.php">Users</a><a href="admin_messages.php">Messages</a><a href="../index.php">Store</a></div>

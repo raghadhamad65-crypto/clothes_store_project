@@ -1,0 +1,1 @@
+<?php include 'config.php';$id=(int)$_GET['id'];$uid=$_SESSION['user_id'];$conn->query("DELETE FROM cart_items WHERE cart_id=$id AND user_id=$uid");header('Location: cart.php');?>

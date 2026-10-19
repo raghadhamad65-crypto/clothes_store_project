@@ -1,0 +1,1 @@
+<?php include 'config.php'; $id=(int)$_POST['cart_id'];$q=(int)$_POST['quantity'];$uid=$_SESSION['user_id'];$conn->query("UPDATE cart_items SET quantity=$q WHERE cart_id=$id AND user_id=$uid");header('Location: cart.php');?>

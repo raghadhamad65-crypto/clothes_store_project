@@ -1,0 +1,1 @@
+<?php include 'config.php'; if(!isLoggedIn()){header('Location: login.php');exit;} $pid=(int)($_POST['product_id']??$_GET['id']); $q=(int)($_POST['quantity']??1); $uid=$_SESSION['user_id']; $conn->query("INSERT INTO cart_items(user_id,product_id,quantity) VALUES($uid,$pid,$q) ON DUPLICATE KEY UPDATE quantity=quantity+$q"); header('Location: cart.php'); ?>

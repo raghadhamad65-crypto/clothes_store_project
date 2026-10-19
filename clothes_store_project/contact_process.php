@@ -1,0 +1,1 @@
+<?php include 'config.php'; $stmt=$conn->prepare('INSERT INTO contacts(name,email,subject,message) VALUES(?,?,?,?)'); $stmt->bind_param('ssss',$_POST['name'],$_POST['email'],$_POST['subject'],$_POST['message']); $stmt->execute(); header('Location: contact.php'); ?>

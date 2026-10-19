@@ -1,0 +1,2 @@
+<?php include_once 'config.php'; ?>
+<header class="navbar"><a class="logo" href="index.php">StyleHub</a><nav><a href="index.php">Home</a><a href="products.php">Products</a><a href="cart.php">Cart</a><a href="contact.php">Contact</a><?php if(isLoggedIn()): ?><a href="profile.php">Profile</a><?php if(isAdmin()): ?><a href="admin/admin_dashboard.php">Admin</a><?php endif; ?><a href="logout.php">Logout</a><?php else: ?><a href="login.php">Login</a><a class="nav-btn" href="register.php">Register</a><?php endif; ?></nav></header>

@@ -1,0 +1,1 @@
+<footer class="footer">© 2026 StyleHub - Clothes Store</footer>
